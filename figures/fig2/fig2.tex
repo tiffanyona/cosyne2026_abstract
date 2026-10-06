@@ -1,0 +1,33 @@
+% figures/fig2/fig2.tex
+% Layout driven by exact PowerPoint coordinates from layout.tex.
+% To update: edit fig2.pptx, then run:
+%   python tools/extract_pptx_layout.py figures/fig2/fig2.pptx --figure fig2
+%   python tools/make_fig_tex.py fig2 --overwrite
+
+\input{figures/fig2/layout.tex}
+
+\begin{figure}[p]
+  \centering
+  \setcounter{subfigure}{0}
+  \resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[inner sep=0pt, outer sep=0pt]
+
+    \node[anchor=north west] at (\FigIIAX, -\FigIIAY) {%
+      \begin{subfigure}[t]{\FigIIAW}%
+        \panel{A}{\includegraphics[width=\linewidth]{figures/fig2/panels/fig2_A.pdf}}%
+        \phantomsubcaption\label{fig:2-a}%
+      \end{subfigure}};
+
+    \node[anchor=north west] at (\FigIIBX, -\FigIIBY) {%
+      \begin{subfigure}[t]{\FigIIBW}%
+        \panel{B}{\includegraphics[width=\linewidth]{figures/fig2/panels/fig2_B.pdf}}%
+        \phantomsubcaption\label{fig:2-b}%
+      \end{subfigure}};
+
+  \end{tikzpicture}}% end \resizebox
+
+  \caption{\textbf{Figure 2 title.}
+    (\subref{fig:2-a}) Panel A caption.
+    (\subref{fig:2-b}) Panel B caption.}
+  \label{fig:2}
+\end{figure}

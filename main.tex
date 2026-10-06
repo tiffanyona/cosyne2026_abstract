@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in, top=0.75in]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{cleveref}
+
+\input{setup.tex}
+
+\graphicspath{{figures/}}
+
+\title{\textbf{Title of abstract}}
+\author{T. Oña-Jodar$^{1}$, Author Two$^{1}$\\
+{\small $^{1}$Neural Dynamics, Allen Institute, Seattle WA}}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+% ---- Abstract text ----
+Lorem ipsum abstract text here.
+
+% ---- Figure 1 ----
+\input{figures/fig1/fig1.tex}
+
+% ---- Figure 2 ----
+\input{figures/fig2/fig2.tex}
+
+\end{document}
