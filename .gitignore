@@ -16,6 +16,9 @@ __pycache__/
 *.pyc
 .venv/
 
+# Tectonic binary (download with: make tectonic)
+tools/bin/
+
 # LaTeX output PDF (rebuilt via `make pdf`)
 main.pdf
 
