@@ -10,8 +10,13 @@ TECTONIC_URL = https://github.com/tectonic-typesetting/tectonic/releases/downloa
 # Build placeholder panels then compile the PDF
 all: panels pdf
 
-# Generate placeholder panel PDFs (replace with real figure scripts as panels are made)
+# Generate panel PDFs from figure scripts
 panels:
+	python figures/fig1/make_panels.py
+	python figures/fig2/make_panels.py
+
+# Generate placeholder panels (useful before real data is loaded)
+panels-placeholder:
 	python tools/make_panels_example.py
 
 # Compile the LaTeX document using the local Tectonic binary
