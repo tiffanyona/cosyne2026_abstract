@@ -16,6 +16,9 @@ __pycache__/
 *.pyc
 .venv/
 
+# LaTeX output PDF (rebuilt via `make pdf`)
+main.pdf
+
 # OS
 .DS_Store
 Thumbs.db

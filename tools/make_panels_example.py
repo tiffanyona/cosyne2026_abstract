@@ -54,13 +54,25 @@ def _placeholder(panel_key, path, description):
 # Update these lists to match your actual panels once the pptx is ready.
 
 FIG1_PANELS = [
-    ("fig1_A", "figures/fig1/panels/fig1_A.pdf", "placeholder"),
-    ("fig1_B", "figures/fig1/panels/fig1_B.pdf", "placeholder"),
+    ("fig1_A", "figures/fig1/panels/fig1_A.pdf", "Ethogram: patch visits across session"),
+    ("fig1_B", "figures/fig1/panels/fig1_B.pdf", "P(stop) at first odor site by patch type"),
+    ("fig1_C", "figures/fig1/panels/fig1_C.pdf", "Mean velocity at first-site odor onset"),
+    ("fig1_D", "figures/fig1/panels/fig1_D.pdf", "Cumulative stop number per patch"),
+    ("fig1_E", "figures/fig1/panels/fig1_E.pdf", "Mean velocity at last odor site before leaving"),
+    ("fig1_F", "figures/fig1/panels/fig1_F.pdf", "P(leave) after consecutive reward omissions"),
+    ("fig1_G", "figures/fig1/panels/fig1_G.pdf", "Mean velocity: reward omitted at first site"),
 ]
 
 FIG2_PANELS = [
-    ("fig2_A", "figures/fig2/panels/fig2_A.pdf", "placeholder"),
-    ("fig2_B", "figures/fig2/panels/fig2_B.pdf", "placeholder"),
+    ("fig2_A", "figures/fig2/panels/fig2_A.pdf", "MVT schematic: local vs. global reward rate"),
+    ("fig2_B", "figures/fig2/panels/fig2_B.pdf", "Depletion curves: High and Low patches"),
+    ("fig2_C", "figures/fig2/panels/fig2_C.pdf", "Bayesian MVT model diagram"),
+    ("fig2_D", "figures/fig2/panels/fig2_D.pdf", "Six leaving metrics — mice (N=24)"),
+    ("fig2_E", "figures/fig2/panels/fig2_E.pdf", "Six leaving metrics — model"),
+    ("fig2_F", "figures/fig2/panels/fig2_F.pdf", "P(reward) at leaving vs. inter-patch distance — mice"),
+    ("fig2_G", "figures/fig2/panels/fig2_G.pdf", "P(reward) at leaving vs. inter-patch distance — model"),
+    ("fig2_H", "figures/fig2/panels/fig2_H.pdf", "PCA trajectories of population activity"),
+    ("fig2_I", "figures/fig2/panels/fig2_I.pdf", "Population PSTHs: heterogeneous cell types"),
 ]
 
 if __name__ == "__main__":
